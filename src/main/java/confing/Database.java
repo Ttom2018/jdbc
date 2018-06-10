@@ -24,12 +24,12 @@ public class Database {
             System.exit(-1);
         }
     }
-
-
     public Connection getConnection() throws SQLException {
         if ( connection == null) {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = DriverManager.getConnection(URL, USER, PASSWORD);
         }
         return connection;
     }
+
+
 }
